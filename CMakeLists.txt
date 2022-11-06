@@ -1,1 +1,5 @@
+cmake_minimum_required(VERSION 3.23)
+project(clothSim)
 add_subdirectory(vendor)
+add_executable(${PROJECT_NAME} main.cpp)
+target_link_libraries(clothSim geometry-central)
